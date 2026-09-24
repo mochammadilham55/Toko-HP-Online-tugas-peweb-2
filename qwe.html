@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko HP onlen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="judul">Toko HP onlen</div>
+                <div class="nav-kanan">
+                    <button class="tema">🌙</button>
+                    <a href="https://wa.me/6282228225791" target="_blank" class="wa">Hubungi penjual</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="identitas">
+            <h1>TOKO HP ONLEN</h1>
+            <h2>Pilih HP yang anda sukai</h2>
+            <p>Ada banyak produk di toko kami, tanyakan stok ke penjual sebelum order, no komplen no refund</p>
+        </div>
+
+        <div class="produk-grid">
+            <div class="product-card">
+                <img class="product-image" 
+                     src="https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=800&q=80" 
+                    alt="Samsung Galaxy S24 Ultra">
+
+                <div class="product-info">
+                    <h3>Samsung Galaxy S24 Ultra</h3>
+                    <p>Flagship Samsung dengan kamera dan S Pen.</p>
+                    <div class="harga">Rp 19.999.000</div>
+        
+                    <div class="product-actions">
+                    <button class="detail-btn">Detail</button>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img class="product-image" 
+                    src="https://img.antaranews.com/cache/1200x800/2023/07/07/iPhone-14-Pro-dan-iPhone-14-Pro-Max-Apple-ID.png.webp" 
+                    alt="iPhone 15 Pro Max">
+
+                <div class="product-info">
+                    <h3>iPhone 15 Pro Max</h3>
+                    <p>Smartphone premium dengan performa tinggi.</p>
+                    <div class="harga">Rp 18.999.000</div>
+
+                    <div class="product-actions">
+                        <button class="detail-btn">Detail</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-image" 
+                    src="https://i02.appmifile.com/mi-com-product/fly-birds/xiaomi-14/PC/headAss2_img.jpeg?f=webp" 
+                    alt="Xiaomi 14">
+
+                <div class="product-info">
+                    <h3>Xiaomi 14</h3>
+                    <p>Performa cepat dengan kamera berkualitas tinggi.</p>
+                    <div class="harga">Rp 10.999.000</div>
+
+                    <div class="product-actions">
+                        <button class="detail-btn">Detail</button>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img class="product-image" 
+                    src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=80" 
+                    alt="Google Pixel 9 Pro">
+
+                <div class="product-info">
+                    <h3>Google Pixel 9 Pro</h3>
+                    <p>Kamera AI dan pengalaman Android yang bersih.</p>
+                    <div class="harga">Rp 15.999.000</div>
+
+                    <div class="product-actions">
+                        <button class="detail-btn">Detail</button>
+                        
+                    </div>
+                </div>
+            </div>            
+
+        </div>
+        <footer><p>&copy; 2026 TokoHP. All Rights Reserved.</p></footer>
+
+        <div class="modal" id="modalProduk">
+            <div class="modal-content">
+                <button class="tutup" id="tutupModal">&times;</button>
+
+                <img id="modalGambar" src="" alt="Produk">
+
+                <h2 id="modalNama">Nama Produk</h2>
+
+                <div class="modal-harga" id="modalHarga">
+                    Harga
+                </div>
+
+                <p id="modalDeskripsi">
+                    Deskripsi produk
+                </p>
+
+                <a id="modalWa" href="#" target="_blank" class="modal-wa">
+                    Hubungi Penjual
+                </a>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>

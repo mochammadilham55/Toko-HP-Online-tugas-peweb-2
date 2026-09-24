@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  color: black;
+}
+
+.navbar {
+  background-color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px lightgray;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.judul {
+  font-size: 22px;
+  font-weight: bold;
+  color: blue;
+}
+
+.nav-kanan {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.tema {
+  border: none;
+  background-color: whitesmoke;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.wa {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.identitas {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.identitas h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.identitas h2 {
+  font-size: 18px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.identitas p {
+  color: gray;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+.produk-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px lightgray;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-info h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.product-info p {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.harga {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product-actions {
+  display: flex;
+}
+
+.detail-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.detail-btn:hover {
+  background-color: darkblue;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.tutup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.modal-harga {
+  color: blue;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.modal-content p {
+  color: gray;
+  margin-bottom: 15px;
+}
+
+.modal-wa {
+  display: block;
+  background-color: green;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+body.dark {
+  background-color: black;
+  color: white;
+}
+
+body.dark .navbar {
+  background-color: darkslategray;
+}
+
+body.dark .product-card {
+  background-color: darkslategray;
+}
+
+body.dark .modal-content {
+  background-color: darkslategray;
+  color: white;
+}
+
+body.dark .tema {
+  background-color: gray;
+}
+
+
+@media (max-width: 900px) {
+  .produk-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .produk-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .identitas h1 {
+    font-size: 26px;
+  }
+}
