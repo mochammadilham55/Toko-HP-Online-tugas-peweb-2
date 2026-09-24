@@ -64,3 +64,21 @@ Mengambil harga.
 Mengambil deskripsi.
 Memasukkan data tersebut ke dalam popup.
 Menampilkan popup dengan menambahkan class CSS.
+
+## Screenshot
+
+### Tampilan Desktop
+
+![Tampilan Desktop](screenshot/tampilan_desktop.png)
+
+### Tampilan Mobile
+
+![Tampilan Mobile](screenshot/tampilan_mobile.png)
+
+### Popup Detail Produk
+
+![Popup Detail Produk](screenshot/popup_detail_produk.png)
+
+###  Dark Mode
+
+![Dark Mode](screenshot/dark_mode.png)
